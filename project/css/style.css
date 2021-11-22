@@ -1,0 +1,109 @@
+/* to know how to use variable colours go to css variable mdn ref and pic root and copy the code for color of any website like flipkart to use in root  */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 88px;
+padding: 0 25px;
+}
+:root {
+    --main-bg-color: #2874f0;
+  }
+  
+header{
+    background-color:var(--main-bg-color);
+    /* border: 2px solid red; */
+}
+nav ul{
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 23px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(56, 14, 136);
+    font-weight: bold;
+    /* try comenting color in this hover section  */
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 350px;
+    height: 25px;
+    border-radius: 5px;
+    margin: 0 10px 0 56px;
+    padding: 0px 12px;
+}
+.search button{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+
+}
+.slider{
+    width: 113vw;
+    margin: 12px auto;
+    overflow: hidden;
+}
+.container{
+    min-height: calc(100vh - 58px - 12vh);
+}
+.slider img{
+   
+        margin: 8px 141px;
+        width: 80vw;
+}
+.card{
+    background-color: white;
+    max-width: 91vw;
+    margin: auto;
+    font-family:'Lato', sans-serif ;
+}
+.card h2{
+    font-family: 'Lato', sans-serif;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+    overflow: scroll;
+    /* try overflow hidden also */
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 29px;
+}
+footer{
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Lato', sans-serif;
+    
+}
